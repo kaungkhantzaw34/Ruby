@@ -93,31 +93,58 @@
 #     puts "Invalid Operator!" 
 # end
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 # case expression
 
-def get_month(month)
-    result = ""
+# def get_month(month)
+#     result = ""
 
-    case month
-    when "Jan"
-        result = "January"
-    when "Feb"
-        result = "February"
-    when "Mar"
-        result = "March"
-    when "Apr"
-        result = "Apirl"
-    else
-        result = "Invalid input!"
-    end
+#     case month
+#     when "Jan"
+#         result = "January"
+#     when "Feb"
+#         result = "February"
+#     when "Mar"
+#         result = "March"
+#     when "Apr"
+#         result = "Apirl"
+#     else
+#         result = "Invalid input!"
+#     end
 
-    return result
+#     return result
+# end
+
+# puts get_month("Apr")
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# while loop 
+
+i = 0
+
+while i < 10
+    puts i
+    i += 1 
 end
 
-puts get_month("Apr")
+run_the_loop = true
 
+while run_the_loop
+    puts "Do you want to stop the loop?"
+    puts "If you do, type in yes.If not type in, no"
+    user_input = gets.chomp()
 
-
+    case user_input
+    when "yes"
+        run_the_loop = false
+    when "no"
+        puts "Gotcha! The loop is still running...."
+    else
+        puts "Invalid Input!"
+    end
+end
 
 
 
