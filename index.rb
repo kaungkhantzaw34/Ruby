@@ -58,37 +58,70 @@
 
 #calculator
 
-puts "Enter a number : "
-num1 = gets.chomp().to_f
-puts "Enter another number : "
-num2 = gets.chomp().to_f
-puts "Enter operation you want to perform : "
-operation = gets.chomp()
+# puts "Enter a number : "
+# num1 = gets.chomp().to_f
+# puts "Enter another number : "
+# num2 = gets.chomp().to_f
+# puts "Enter operation you want to perform : "
+# operation = gets.chomp()
 
-def add(num1,num2)
-    return num1+num2
+# def add(num1,num2)
+#     return num1+num2
+# end
+
+# def sub(num1,num2)
+#     return num1-num2
+# end
+
+# def multi(num1,num2)
+#     return num1*num2
+# end
+
+# def divide(num1,num2)
+#     return num1/num2
+# end
+
+# if (operation == "+")
+#     puts add(num1,num2)
+# elsif (operation == "-")
+#     puts sub(num1,num2)
+# elsif (operation == "/")
+#     puts divide(num1,num2)
+# elsif (operation == "*")
+#     puts multi(num1,num2)    
+# else
+#     puts "Invalid Operator!" 
+# end
+
+# case expression
+
+def get_month(month)
+    result = ""
+
+    case month
+    when "Jan"
+        result = "January"
+    when "Feb"
+        result = "February"
+    when "Mar"
+        result = "March"
+    when "Apr"
+        result = "Apirl"
+    else
+        result = "Invalid input!"
+    end
+
+    return result
 end
 
-def sub(num1,num2)
-    return num1-num2
-end
+puts get_month("Apr")
 
-def multi(num1,num2)
-    return num1*num2
-end
 
-def divide(num1,num2)
-    return num1/num2
-end
 
-if (operation == "+")
-    puts add(num1,num2)
-elsif (operation == "-")
-    puts sub(num1,num2)
-elsif (operation == "/")
-    puts divide(num1,num2)
-elsif (operation == "*")
-    puts multi(num1,num2)    
-else
-    puts "Invalid Operator!" 
-end
+
+
+
+
+
+
+
