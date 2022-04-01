@@ -42,14 +42,53 @@
 #     puts "It is neither ruby nor python"
 # end 
 
-def min(num1 ,num2 , num3)
-    if(num1 <= num2 and num1 <= num3)
-        return num1
-    elsif (num2 <= num1 and num2 <= num3)
-        return num2
-    else
-        return num3
-    end
+# def min(num1 ,num2 , num3)
+#     if(num1 <= num2 and num1 <= num3)
+#         return num1
+#     elsif (num2 <= num1 and num2 <= num3)
+#         return num2
+#     else
+#         return num3
+#     end
+# end
+
+# puts min(-2,1,3)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#calculator
+
+puts "Enter a number : "
+num1 = gets.chomp().to_f
+puts "Enter another number : "
+num2 = gets.chomp().to_f
+puts "Enter operation you want to perform : "
+operation = gets.chomp()
+
+def add(num1,num2)
+    return num1+num2
 end
 
-puts min(-2,1,3)
+def sub(num1,num2)
+    return num1-num2
+end
+
+def multi(num1,num2)
+    return num1*num2
+end
+
+def divide(num1,num2)
+    return num1/num2
+end
+
+if (operation == "+")
+    puts add(num1,num2)
+elsif (operation == "-")
+    puts sub(num1,num2)
+elsif (operation == "/")
+    puts divide(num1,num2)
+elsif (operation == "*")
+    puts multi(num1,num2)    
+else
+    puts "Invalid Operator!" 
+end
