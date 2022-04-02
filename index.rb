@@ -122,33 +122,94 @@
 
 # while loop 
 
-i = 0
+# i = 0
 
-while i < 10
-    puts i
-    i += 1 
-end
+# while i < 10
+#     puts i
+#     i += 1 
+# end
 
-run_the_loop = true
+# run_the_loop = true
 
-while run_the_loop
-    puts "Do you want to stop the loop?"
-    puts "If you do, type in yes.If not type in, no"
-    user_input = gets.chomp()
+# while run_the_loop
+#     puts "Do you want to stop the loop?"
+#     puts "If you do, type in yes.If not type in, no"
+#     user_input = gets.chomp()
 
-    case user_input
-    when "yes"
-        run_the_loop = false
-    when "no"
-        puts "Gotcha! The loop is still running...."
+#     case user_input
+#     when "yes"
+#         run_the_loop = false
+#     when "no"
+#         puts "Gotcha! The loop is still running...."
+#     else
+#         puts "Invalid Input!"
+#     end
+# end
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Guessing Game 
+
+#while condition is checking if any guess has left which is 5
+
+# programming_languages = Array["C++","python","Java","C","PHP","Ruby","JavaScript"]
+# length_of_array = programming_languages.length()
+# no_of_guess = 5
+
+# while no_of_guess > 0
+#     puts "Guess the length of array I have just created : "
+#     guess = gets.chomp().to_i
+#     no_of_guess -= 1
+#     if no_of_guess != 0
+#         if (guess > length_of_array)
+#             puts "Your guess is greater than the actual length"
+#             puts "Now you have " + no_of_guess.to_s + " guess."
+#         elsif (guess < length_of_array)
+#             puts "Your guess is less than the actual length"
+#             puts "Now you have " + no_of_guess.to_s + " guess."
+#         elsif (guess == length_of_array)
+#             puts "Congratulations! You got it right."
+#             break
+#         end
+#     else
+#         if guess == length_of_array
+#             puts "Congratulations! You got it right."
+#             break
+#         else
+#             puts "You fucking lose!"
+#             break
+#         end
+#     end
+# end
+
+# while condition is checking whether user guess is equal to hash_length or not, and is there any guess left?
+
+names = {
+    "name" => "Kaung Khant Zaw",
+    "age" => 20,
+    "place" => "Yangon",
+    "birth_place" => "Yangon",
+    "fav_programming_lang" => "python"
+}
+hash_length = names.length()
+puts hash_length
+user_guess = ""
+out_of_guess = false
+guess_limit = 5
+while user_guess != hash_length and !out_of_guess
+    if(guess_limit > 0)
+        puts "Enter your guess : "
+        user_guess = gets.chomp().to_i
+        guess_limit-= 1
+        puts "you have " + guess_limit.to_s + " guess left."
     else
-        puts "Invalid Input!"
+        out_of_guess = true
     end
+
 end
 
-
-
-
-
-
-
+if out_of_guess == true
+    puts "You lost"
+else
+    puts "You win"
+end
