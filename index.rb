@@ -184,32 +184,59 @@
 
 # while condition is checking whether user guess is equal to hash_length or not, and is there any guess left?
 
-names = {
-    "name" => "Kaung Khant Zaw",
-    "age" => 20,
-    "place" => "Yangon",
-    "birth_place" => "Yangon",
-    "fav_programming_lang" => "python"
-}
-hash_length = names.length()
-puts hash_length
-user_guess = ""
-out_of_guess = false
-guess_limit = 5
-while user_guess != hash_length and !out_of_guess
-    if(guess_limit > 0)
-        puts "Enter your guess : "
-        user_guess = gets.chomp().to_i
-        guess_limit-= 1
-        puts "you have " + guess_limit.to_s + " guess left."
-    else
-        out_of_guess = true
-    end
+# names = {
+#     "name" => "Kaung Khant Zaw",
+#     "age" => 20,
+#     "place" => "Yangon",
+#     "birth_place" => "Yangon",
+#     "fav_programming_lang" => "python"
+# }
 
-end
+# hash_length = names.length()
+# puts hash_length
+# user_guess = ""
+# out_of_guess = false
+# guess_limit = 5
 
-if out_of_guess == true
-    puts "You lost"
-else
-    puts "You win"
-end
+# while user_guess != hash_length and !out_of_guess
+#     if(guess_limit > 0)
+#         puts "Enter your guess : "
+#         user_guess = gets.chomp().to_i   
+#         guess_limit-= 1
+#         puts "you have " + guess_limit.to_s + " guess left."
+#     else
+#         out_of_guess = true
+#     end
+
+# end
+
+# if out_of_guess == true
+#     puts "You lost"
+# else
+#     puts "You win"
+# end
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#For loop
+
+programming_languages = ["Ruby","python","C++","PHP","JavaScript"]
+
+# for i in programming_languages
+#     puts i
+# end
+
+# programming_languages.each do |lang|
+#     puts lang
+# end
+
+# for i in 20..29
+#     puts i
+# end
+
+# 10.times do |i|
+#     puts i
+# end
+
+
+

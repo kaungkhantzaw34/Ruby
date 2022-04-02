@@ -1,0 +1,146 @@
+	Welcome to Ruby Programming  💭️💭️💭️💭️💭️💭️
+
+	print "" 													> (do not print out new line)
+	puts "" 													> (print out new line)
+	name = "kaung khant zaw" 									> declaring variable
+	age = 20
+	gpa = 4.5
+	ismale = true
+	istall = false
+	flaws = nil 												> nil means it has no value
+
+	Working with strings 💭️💭️💭️💭️💭️💭️
+
+	phrase = "My name is Kaung Khant Zaw")
+	puts ("My name is \"Kaung Khant Zaw\" ")					> backslech(\) is used to omit the ", newline in the strings.
+	puts phrase.upcase()										> makes uppercase letter in the phrase
+	puts phrase.downcase()										> makes lowercase letter in the phrase
+	puts phrase.strip()											> remove unnecessary spaces 
+	puts phrase.length()										> the number of characters in the phrase
+	puts phrase.include? "Zaw"									> is Zaw in the phrase?
+	puts phrase[11]												> print out 'K' from the phrase
+	puts phrase[11,15]											> print out 'Kaung Khant Zaw' because [11] is starting point and [15] is the number of index amount.
+	puts phrase.index("K")										> print the index of K
+	puts "kaung khant zaw".upcase()								> KAUNG KHANT ZAW
+	puts "KAUNG KHANT ZAW".downcase()							> kaung khant zaw
+
+	Math and Numbers 💭️💭️💭️💭️💭️💭️
+
+	age = 20
+	puts ("My age is "+ age.to_s + " years old.")				> use '.to_s' to change into string from number
+	isMale = true			
+	puts ("It is "+ isMale.to_s + " that he is male")			> change into string from boolean
+
+	puts num.abs()												> change into absolute number
+	puts num.round()											> round the decimal number
+	puts num.ceil()												> ceiling take the higher number
+	puts num.floor()											> floor take the lower number 
+	puts Math.sqrt(num)											> gives the square root of the number using Math class
+	puts Math.log(num)											
+
+	puts 10/3													> integer / interger = interger
+	puts 10/7.0													> interger / floating = floating
+
+	Getting Input from the user 💭️💭️💭️💭️💭️💭️💭️
+
+	puts "Enter Your Name : "
+	name = gets.chomp()											> gets is getting input from user 
+	puts "Enter Your Age : "									
+	age = gets.chomp()											> and chomp() is used to rid off the new line when we clicked enter
+	puts ("Your name is "+ name + " and your age is "+ age)
+
+	puts "Enter a number "	
+	num1 = gets.chomp().to_i									> get input ,remove new line and convert into interger	
+	puts "Enter another number "								> but '.to_i' can't calculate floating numbers
+	num2 = gets.chomp().to_i	
+	result = num1 + num2 
+	puts result
+
+	puts "Enter a number "	
+	num1 = gets.chomp().to_f									> get input, remove new line and convert into floating number  
+	puts "Enter another number "								> .to_f can calculate all types of numbers 
+	num2 = gets.chomp().to_f	
+	result = num1 + num2 
+	puts result
+
+	Arrays 💭️💭️💭️💭️💭️💭️💭️
+	
+	names = Array["Kaung Khant Zaw","Mar Kyaing", "Zaw Kyaing","Chris","Wai","Kyaw","Zaw"]	
+	puts names[-1]												> output is Zaw Kyaing
+	puts names[1,5]												> output from mar kyaing to kyaw names[start,range]
+	
+	names = Array.new											> declare array but no data
+	names[0] = "James"											> add index 0 
+	puts names[0]												
+	
+	names.length()												> length of array which is 7
+	names.include? "Wai"										> check is "Wai" in array?
+	names.reverse()												> reverse the array like [Zaw,Kyaw,Wai,Chris,...]
+	names.sort()												> sort array from a to z
+	
+	Hash  💭️💭️💭️💭️💭️💭️💭️ (objects, dictionary)
+	
+	code!❗️
+	
+	names = {													> create key-value pairs 
+		"name" => "James",
+		"age" => 20
+		}
+	puts names["age"]
+	
+	~~~~~~~~~~~~~~~~~~
+	
+	students_info = [
+		{
+		    "name" => "Zaw",
+		    "sex" => "male",
+		    "grade" => 10,
+		    "place" => "yangon" 
+		},
+		{
+		    "name" => "Khant",
+		    "sex" => "male",
+		    "grade" => 9,										> create hash in array
+		    "place" => "mandalay"
+		},
+		{
+		    "name" => "Su",
+		    "sex" => "female",
+		    "grade" => 11,
+		    "place" => "taunggyi"
+		}
+	]
+	puts students_info[2]["sex"]								> output is female
+	
+	Methods 💭️💭️💭️💭️💭️💭️💭️
+	
+	Code! ❗️
+	
+	def info(name, age
+		puts "Your name is " + name + " and you are " + age.to_s + " years old."
+	end
+	
+	info("Kaung Khant Zaw",20)
+	
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ methods with default values
+	
+	def info(name = "no_name", age = 0)
+		puts "Your name is " + name + " and you are " + age.to_s + " years old."
+	end
+	
+	info("KKZ")		
+	
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	def cube(num)
+		result = num ** 3
+		return result
+		puts "Hello this is under the return statement				> this will not be printed out becuase it is under 
+	end																  return statement
+	
+	puts cube(2)															
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	IF statement 💭️💭️💭️💭️💭️💭️💭️
+	
+	if (condition)
