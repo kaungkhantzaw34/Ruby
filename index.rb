@@ -220,7 +220,7 @@
 
 #For loop
 
-programming_languages = ["Ruby","python","C++","PHP","JavaScript"]
+# programming_languages = ["Ruby","python","C++","PHP","JavaScript"]
 
 # for i in programming_languages
 #     puts i
@@ -237,6 +237,33 @@ programming_languages = ["Ruby","python","C++","PHP","JavaScript"]
 # 10.times do |i|
 #     puts i
 # end
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Exponent Method
+
+# def power(base_num, pow_num)
+#     result = 1 
+#     pow_num.times do |index|
+#         result *= base_num
+#     end
+#     return result
+# end
+
+# finding factorial 
+
+# puts "enter a number to get factorial : "
+# num = gets.to_i
+
+# def factorial(num)
+#     result = 1
+#     for i in 1..num
+#         result *= i
+#     end
+#     return result
+# end
+
+# puts "The factorial of " + num.to_s + " is " + factorial(num).to_s
 
 
 
