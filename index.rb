@@ -276,5 +276,39 @@
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# Reading files 
+
+# File.open("ruby_notes.txt","r") do |file|
+#     puts file.read()
+# end
+
+# File.open("/home/kokg/Desktop/notes/takeyourtime","r") do |myNotes|
+#     puts myNotes.read().include? "I"
+# end
+
+# File.open("ruby_notes.txt","r") do |file|
+#     puts file.readline()    #prints the first line of ruby_notes file
+#     puts file.readline()    #prints the second line of ruby_notes file
+# end
+
+# File.open("/home/kokg/Desktop/notes/takeyourtime","r") do |tyt|
+#     puts tyt.readchar()     # prints the first character of first line
+#     puts tyt.readchar()     # prints the second character of first line
+# end
+
+# putting newFile data into names array
+
+# names = Array.new 
+# File.open("newFile.txt","r") do |file|
+#     for i in file.readlines()
+#         names.append(i)
+#     end
+# end
+# print names
+
+#you can read any file 
+# pdf_file = File.open("/home/kokg/Documents/web development/oopbasic.pdf","r")
+# puts pdf_file.read
+# pdf_file.close()      #Don't forget to close the file after you have read it!
 
 
