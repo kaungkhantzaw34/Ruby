@@ -265,5 +265,16 @@
 
 # puts "The factorial of " + num.to_s + " is " + factorial(num).to_s
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# multiple line comments
+
+=begin
+    this is multiple line comments
+    and you can put whatever you want in here 
+=end
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 
