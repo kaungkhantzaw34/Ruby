@@ -357,4 +357,54 @@
 # end
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# Classes and Objects 
+
+# class Car
+#     attr_accessor :brand_name , :color, :engine_power         #defining attributes
+# end
+
+# car1 = Car.new()                                              # creating objects called car1
+# car1.brand_name = "Mercedes"
+# car1.color = "red and white"
+# car1.engine_power = "3.5"
+# puts car1.brand_name,car1.color,car1.engine_power
+
+#initialize method (or Constructor)
+
+# class Car 
+#     attr_accessor :brand_name, :color, :engine_power
+#     def initialize(brand_name, color, engine_power)
+#         @brand_name = brand_name
+#         @color = color
+#         @engine_power = engine_power
+#     end
+# end
+
+# car1 = Car.new("Mercedes","black and orange","6.0")
+# puts car1.engine_power
+
+# class Car
+#     attr_accessor :brand_name, :color, :price
+#     def initialize(brand_name,color,price)                #using constructor or initialize method
+#         @brand_name = brand_name
+#         @color = color
+#         @price = price
+#     end
+
+#     def checkPrice()                                      #using Objects methods
+#         if @price > 50000
+#             puts "Your ride is incredible!"
+#         else 
+#             puts "What kind of piece of shit is this!"
+#         end
+#     end
+
+# end
+
+# my_car = Car.new("Lexus","black",80000)
+# neighbour_car = Car.new("Thilawa","white",15000)
+# my_car.checkPrice()
+# neighbour_car.checkPrice()
+
+
 
