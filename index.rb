@@ -311,4 +311,26 @@
 # puts pdf_file.read
 # pdf_file.close()      #Don't forget to close the file after you have read it!
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# Writing files
+
+# file = File.open("newFile.txt","a")             # appending the file 
+# file.write("\nKaung Khant Zaw")
+# file.write("\nMar Kyaing")
+# file.close()
+
+# File.open("newFile.txt","w") do |file|
+#     file.write("Hello everything in this file is overwritten!")     # overwritting the file
+# end
+
+# File.open("index.html","w") do |html|       # creat html file and write the file
+#     html.write("<!DOCTYPE html>")
+# end
+
+# it reads first two line and overwrite everything after it.
+# File.open("newFile.txt","r+") do |file|         # read and write
+#     file.readline()
+#     file.readline()
+#     file.write("Will Smith")
+# end
