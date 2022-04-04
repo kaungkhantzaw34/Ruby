@@ -439,3 +439,32 @@
 
 # end
 # start_quiz(questions_answers)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Inheritance   (it allows us to extend the functionality of class into other classes)
+
+# class Chef          #superclass
+#     def make_pizza()
+#         puts "Chef makes pizza"
+#     end
+#     def make_burger()
+#         puts "Chef makes burger."
+#     end
+#     def make_pasta()
+#         puts "Chef makes pasta"
+#     end
+# end
+
+# class BurmeseChef < Chef        #subclass inherit from superclass
+#     def motehingar()
+#         puts "chef makes mote hin gar"
+#     end
+# end
+
+# chef = Chef.new()
+# chef.make_burger()
+
+# burmese_chef = BurmeseChef.new()
+# burmese_chef.make_pasta()
+# burmese_chef.motehingar()
