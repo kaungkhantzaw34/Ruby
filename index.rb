@@ -468,3 +468,12 @@
 # burmese_chef = BurmeseChef.new()
 # burmese_chef.make_pasta()
 # burmese_chef.motehingar()
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#Modules
+
+# require_relative "tools.rb"       #adding tools 
+# include Tool                      #include Tool module
+# Tool.sayHello("kokhant")
+# Tool.sayBye("mar kyaing")
