@@ -334,3 +334,27 @@
 #     file.readline()
 #     file.write("Will Smith")
 # end
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Handling Errors
+# names = [2,23,23,54,65,67,78]
+# begin
+#     # puts names['kaung']
+#     puts 10/0
+# rescue ZeroDivisionError
+#     puts "Zero divison error"
+# rescue TypeError
+#     puts "type error"
+# end
+
+# begin
+#     put names[3]
+# rescue TypeError => error         # take the error and store it in variable called error
+#     puts error                    # print out the actual error 
+# rescue NoMethodError => error       
+#     puts error                     
+# end
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
