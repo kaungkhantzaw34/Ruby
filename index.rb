@@ -477,3 +477,10 @@
 # include Tool                      #include Tool module
 # Tool.sayHello("kokhant")
 # Tool.sayBye("mar kyaing")
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Interactive ruby (irb)
+
+# go to terminal > type in "irb" >
+# now you are in interactive mode of ruby 
