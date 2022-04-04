@@ -406,5 +406,36 @@
 # my_car.checkPrice()
 # neighbour_car.checkPrice()
 
+# Building a Quiz
+
+# quiz1 = "What is terminal?\n(a)a program\n(b)a video game\n(c)a server"
+# quiz2 = "What is your favourite programming language?\n(a)C++\n(b)python\n(c)PHP"
+# quiz3 = "What do you like to do?\n(a)watch movie\n(b)code all day\n(c)play game"
 
 
+# class Quiz
+#     attr_accessor :que, :ans
+#     def initialize(que,ans)
+#         @que = que
+#         @ans = ans
+#     end
+# end
+
+# que1 = Quiz.new(quiz1,"a")
+# que2 = Quiz.new(quiz2,"b")
+# que3 = Quiz.new(quiz3,"c")
+
+# questions_answers = [que1,que2,que3]
+# def start_quiz(questions_answers)
+#     score = 0
+#     for que_ans in questions_answers
+#         puts que_ans.que
+#         answer = gets.chomp()
+#         if answer == que_ans.ans
+#             score = score + 1
+#         end
+#     end
+#     puts "You got "+score.to_s+"/"+questions_answers.length().to_s
+
+# end
+# start_quiz(questions_answers)
